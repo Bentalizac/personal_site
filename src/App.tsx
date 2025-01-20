@@ -1,10 +1,21 @@
 import React from 'react';
+import Navbar from './components/navbar/NavBar';
+import HomePage from './pages/HomePage';
+import { Routes, Route } from 'react-router-dom';
+import ProjectsPage from './pages/projects/ProjectsPage';
+import AboutPage from './pages/AboutPage';
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Welcome to My Simple Webpage</h1>
-      <p>This is a bare-bones React app using TSX.</p>
+      <Navbar />
+      <main style={{ padding: '1rem' }}>
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </main>
     </div>
   );
 };
