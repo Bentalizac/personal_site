@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import { Project } from "../../config/projects";
-
+import "./ProjectItem.css"
 interface ProjectItemProps {
     project: Project;
   }
@@ -9,7 +9,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     
     const github_link = (): JSX.Element | null => {
         return project.github_link ? (
-            <p>
+            <p className="projectLinks">
                 <a href={project.github_link} target="_blank" rel="noopener noreferrer">
                     View on Github
                 </a>
@@ -19,7 +19,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 
     const deployed_link = (): JSX.Element | null => {
         return project.active && project.deployed_link ? (
-            <p>
+            <p className="projectLinks">
                 <a href={project.deployed_link} target="_blank" rel="noopener noreferrer">
                     View Deployed Project
                 </a>
@@ -28,9 +28,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     }
 
     return (
-        <li key={project.id} style={{ marginBottom: '1rem' }}>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
+        <li className="projectItem" key={project.id} style={{ marginBottom: '1rem' }}>
+            <h4 className="projectTitle"> {project.name}</h4>
+            <p className="description"> {project.description}</p>
             {github_link()}
             {deployed_link()}
         </li>

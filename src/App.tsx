@@ -1,21 +1,21 @@
 import React from 'react';
 import Navbar from './components/navbar/NavBar';
-import HomePage from './pages/HomePage';
+import Home from './pages/Home';
 import { Routes, Route } from 'react-router-dom';
-import ProjectsPage from './pages/ProjectsPage';
-import AboutPage from './pages/AboutPage';
+import Projects from './pages/Projects';
+import About from './pages/About';
+import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Navbar />
-      <main style={{ padding: '1rem' }}>
-        <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/about" element={<AboutPage />} />
-        </Routes>
-      </main>
+    <div className='container'>
+        <aside className='sidebar'>
+            <About />
+        </aside>
+        <main className='main'>
+            <Projects />
+        </main>
+        
     </div>
   );
 };

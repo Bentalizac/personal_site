@@ -1,0 +1,32 @@
+
+
+.projectItem {
+    background-color: #f9f9f9; /* Light background for the box */
+    border: 1px solid #e0e0e0; /* Subtle border for separation */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 1rem; /* Inner padding */
+    max-width: 800px; /* Constrain the width */
+    margin: 0 auto; /* Center align items horizontally */
+  }
+
+  .projectTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .projectLinks a {
+    text-decoration: none;
+    color: #007BFF; /* Link color */
+    transition: color 0.2s ease;
+  }
+  
+  .projectLinks a:hover {
+    color: #0056b3; /* Darker link color on hover */
+  }
