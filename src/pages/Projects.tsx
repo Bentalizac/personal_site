@@ -4,27 +4,28 @@ import ProjectItem from '../components/projectItem/ProjectItem';
 import '../App.css';
 
 const Projects: React.FC = () => {
-
     return (
-        <div>
-            <h2>
-                Here are some of my personal projects:
-            </h2>
-            <ul className='projectList'>
-                {personal_projects.map((project) => (
-                    <ProjectItem key={project.id} project={project} />
-                ))}
-            </ul>
-            <h2>
-                Here are some of my school projects:
-            </h2>
-            <ul className='projectList'>
-                {school_projects.map((project) => (
-                    <ProjectItem key={project.id} project={project} />
-                ))}
-            </ul>
+        <div className="projects-container">
+            <div className="projects-column">
+                <h2 className="title">Personal Projects:</h2>
+                <hr className="titleLine" />
+                <ul className="projectList">
+                    {personal_projects.map((project) => (
+                        <ProjectItem key={project.id} project={project} />
+                    ))}
+                </ul>
+            </div>
+            <div className="projects-column">
+                <h2 className="title">School Projects:</h2>
+                <hr className="titleLine" />
+                <ul className="projectList">
+                    {school_projects.map((project) => (
+                        <ProjectItem key={project.id} project={project} />
+                    ))}
+                </ul>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+
+.titleLine {
+    margin-top: 0.1;
+    border: none; /* Remove default border styling */
+    height: 2px; /* Thickness of the line */
+    background: #ff9e61; /* Line color */
+    width: 50%; /* Line width (relative to its container) */
+    margin: 0.25rem 0; /* Add spacing around the line */
+    margin-bottom: 1rem;
+  }
+
+  .projects-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+  }
+  
+  .projects-column {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+    max-width: 45%; /* Maintain a maximum width for larger screens */
+  }
+
+  .projects-container {
+    display: flex;
+    gap: 0rem; /* Space between the columns */
+    justify-content: flex-start; /* Space columns evenly */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow columns to wrap to the next row */
+  }
+  
+  .projects-column {
+    justify-content: flex-start; /* Space columns evenly */
+    align-items: flex-start;
+    flex: 1 1 calc(10%); /* Each column takes 50% width minus the gap */
+    max-width: 70%; /* Optional: Limit the width for larger screens */
+    box-sizing: border-box; /* Include padding in size calculations */
+  }
+  
+  @media (max-width: 768px) {
+    .projects-column {
+      flex: 1 1 100%; /* On smaller screens, take full width */
+      max-width: 100%; /* Remove width restrictions for stacking */
+    }
+  }
+
+  .links a {
+    text-decoration: none;
+    color: #498fa3; /* Link color */
+    transition: color 0.35s ease;
+  }
+  
+  .links a:hover {
+    color: #ff9e61; /* Darker link color on hover */
+  }

@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap');
 
 
 .projectItem {
-    background-color: #f9f9f9; /* Light background for the box */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for the box */
     border: 1px solid #e0e0e0; /* Subtle border for separation */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     padding: 1rem; /* Inner padding */
-    max-width: 800px; /* Constrain the width */
-    margin: 0 auto; /* Center align items horizontally */
+    flex: 1 1 calc(100% - 1rem); /* 3 items per row, adjusting for gap */
+    max-width: calc(90% - 1rem);
+    margin: 1 auto; /* Center align items horizontally */
   }
 
   .projectTitle {
+    margin-top: 0;
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headings */
   }
   
   .description {
@@ -23,10 +27,46 @@
   
   .projectLinks a {
     text-decoration: none;
-    color: #007BFF; /* Link color */
-    transition: color 0.2s ease;
+    color: #498fa3; /* Link color */
+    transition: color 0.35s ease;
   }
   
   .projectLinks a:hover {
-    color: #0056b3; /* Darker link color on hover */
+    color: #ff9e61; /* Darker link color on hover */
   }
+
+  .github-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 16px;
+    margin-left: .25rem;
+    margin-right: 0.5rem;
+  }
+  .github-link {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the icon and text */
+    text-decoration: none; /* Optional: remove link underline */
+    color: inherit; /* Optional: inherit text color */
+  }
+  .subtitle {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0rem;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headings */
+  }
+
+  .projectItem h4 {
+    display: inline; /* Make the title and badge appear on the same line */
+    margin-right: 0.5rem; /* Add a bit of space between the title and badge */
+  }
+
+.wip-badge {
+  display: inline-block; /* Make the badge appear inline with the title */
+  background-color: #f5c518; /* Yellow for "under construction" */
+  color: #000;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.5rem; /* Space between the title and badge */
+}
