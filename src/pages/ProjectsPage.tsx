@@ -1,6 +1,6 @@
 import React from 'react';
-import { personal_projects, school_projects } from '../../config/projects';
-import ProjectItem from '../../components/projectItem/ProjectItem';
+import { personal_projects, school_projects } from '../config/projects';
+import ProjectItem from '../components/projectItem/ProjectItem';
 
 const ProjectsPage: React.FC = () => {
 

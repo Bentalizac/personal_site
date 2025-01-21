@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/navbar/NavBar';
 import HomePage from './pages/HomePage';
 import { Routes, Route } from 'react-router-dom';
-import ProjectsPage from './pages/projects/ProjectsPage';
+import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
 
 const App: React.FC = () => {

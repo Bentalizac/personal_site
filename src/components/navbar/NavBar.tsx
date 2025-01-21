@@ -28,7 +28,7 @@ const styles = {
     },
     links: {
       display: 'flex',
-      gap: '1rem',
+      gap: '2rem',
     },
     link: {
       color: '#fff',

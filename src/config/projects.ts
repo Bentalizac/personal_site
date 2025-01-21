@@ -8,21 +8,6 @@ export interface Project {
 }
 
 export const personal_projects: Project[] = [
-    {
-        id: 0,
-        active: false,
-        name: "testing",
-        description: "testing",
-        github_link: "none",
-    },
-    {
-        id: 1,
-        active: true,
-        name: "testing",
-        description: "testing",
-        github_link: "none",
-        deployed_link: "none"
-    }
 ]
 
 export const school_projects: Project[] = [
