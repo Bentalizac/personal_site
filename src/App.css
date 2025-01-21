@@ -21,6 +21,12 @@ body {
     box-sizing: border-box; /* Include padding in dimensions */
   }
 
+  .maintitle {
+    margin-left: .5rem;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
 .sidebar {
     background: linear-gradient(to bottom, 
     rgb(255, 255, 255) 0vh,    /* Fully opaque color at the top */

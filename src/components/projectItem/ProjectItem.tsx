@@ -12,7 +12,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         return project.github_link ? (
             <p className="projectLinks">
                 <a href={project.github_link} target="_blank" rel="noopener noreferrer" className="github-link">
-                    
                     View on Github
                     <img 
                         src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
