@@ -17,7 +17,7 @@ const About: React.FC = () => {
                         className="github-icon"
                         />
                 </a>
-        <a href="https://www.linkedin.com/in/samuel-ellsworth-149094152/" target="_blank" rel="noopener noreferrer" className="github-link">
+        <a href="https://www.linkedin.com/in/eli-ellsworth-149094152/" target="_blank" rel="noopener noreferrer" className="github-link">
               LinkedIn Profile
         </a>
         <a href="https://leetcode.com/u/bentalizac/" target="_blank" rel="noopener noreferrer">

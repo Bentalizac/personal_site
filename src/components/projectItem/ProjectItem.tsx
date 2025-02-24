@@ -47,9 +47,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     return (
         <li className="projectItem" key={project.id} style={{ marginBottom: '1rem' }}>
             {title_line()}
-            
             <p className="description"> {project.description}</p>
-
             <hr className="subtitleLine" />
             <p className="subtitle">Links:</p>
             {github_link()}
